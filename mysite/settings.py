@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +125,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media/"
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+          # 'rest_framework.permissions.IsAdminUser',
+    ],
+    'PAGE_SIZE': 10
+
+}
