@@ -3,6 +3,8 @@
 __pycache__
 myvenv
 db.sqlite3
-/static
+/django-blog/static
 .DS_Store
 media
+venv
+yolov5
